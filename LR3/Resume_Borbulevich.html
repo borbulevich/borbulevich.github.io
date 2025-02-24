@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Богдан Борбулевич</title>
+    <style>
+        body {
+            display: block;
+            width: 93%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .page-container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .avatar {
+            width: 170px;
+            height: 170px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .image {
+            display: block;
+            width: 100%;
+        }
+        .left-side {
+            font-size: 14px;
+            float: left;
+            width: 20%;
+            min-height: 100vh;
+            background-color: #3a5e90;
+            color: white;
+            padding: 15px;
+        }
+        .left-side h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .left-side hr {
+            width: 100%;
+            margin: 10px 0;
+            border: 0;
+            border-top: 1px solid rgb(255, 255, 255);
+        }
+        .left-side b {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .left-side p {
+            margin-bottom: 15px;
+        }
+        .right-side {
+            width: 80%;
+            padding: 20px;
+            float: right;
+            text-align: left;
+        }
+        .right-side h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        .right-side section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        .right-side h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #171717;
+        }
+        .right-side ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .right-side ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        .projects {
+            margin-bottom: 20px;
+        }
+        .divider {
+            border-bottom: 1px solid white;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn:hover {
+            background-color: #df1414;
+        }
+        .btn1 {
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn1:hover {
+            background-color: #6e58dc;
+        }
+        .btn2 {
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn2:hover {
+            background-color: #17df14;
+        }
+        .btn3 {
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn3:hover {
+            background-color: #baf90d;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Шапка сторінки -->
+        <header class="right-side">
+            <h1>Богдан Борбулевич</h1>
+        </header>
+
+        <!-- Бічна панель з особистими даними -->
+        <aside class="left-side">
+            <figure class="avatar">
+                <img src="photo.jpg" alt="Фото Богдана Борбулевича" class="image">
+            </figure>
+            <section>
+                <h2>Особисті дані</h2>
+                <hr>
+                <p><b>Ім'я:</b> Богдан Борбулевич</p>
+                <p><b>Адреса:</b> вул. Повстанців, буд. 45, Івано-Франківськ</p>
+                <p><b>Номер телефону:</b> <a href="tel:+380682293321">+38 068 229 3321</a></p>
+                <p><b>Email:</b> <a href="mailto:bohdan.borbulevych-pi2203@kep.nung.edu.ua">bohdan.borbulevych-pi2203@kep.nung.edu.ua</a></p>
+                <p><b>Дата народження:</b> <time datetime="2007-03-08">08-03-2007</time></p>
+            </section>
+            <section>
+                <h2>Інтереси</h2>
+                <hr class="divider">
+                <p>Волейбол, програмування, теніс</p>
+            </section>
+            <section>
+                <h2>Мови</h2>
+                <hr class="divider">
+                <p>Українська, Англійська</p>
+            </section>
+        </aside>
+
+        <!-- Основний вміст -->
+        <main class="right-side">
+            <section>
+                <h3>Досвід роботи</h3>
+                <article>
+                    <p><b>Веб-розробник</b>, SoftServe, Київ</p>
+                    <p><time datetime="2026-04">квітень 2026</time> – <time datetime="2030-09">вересень 2030</time></p>
+                    <p>Розробка програмного забезпечення; створення систем автоматичної перевірки програмного забезпечення.</p>
+                </article>
+                <article>
+                    <p><b>Лаборант кафедри робототехніки</b>, НУ "Львівська політехніка", Львів</p>
+                    <p><time datetime="2022-09">вересень 2022</time> – <time datetime="2026-08">серпень 2026</time></p>
+                </article>
+            </section>
+
+            <section>
+                <h3>Освіта і кваліфікації</h3>
+                <article>
+                    <p><b>Бакалавр</b>, ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ</p>
+                    <p><time datetime="2022-09">вересень 2022</time> – <time datetime="2026-07">липень 2026</time></p>
+                </article>
+            </section>
+
+            <section>
+                <h3>Курси</h3>
+                <ul>
+                    <li>Англійська для IT, Мовна школа Speak Up (<time datetime="2023">2023</time> – <time datetime="2025">2025</time>)</li>
+                    <li>Програмування на мові C++, Центр IT (<time datetime="2024">2024</time>)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Навички</h3>
+                <p>Python, C++, Java</p>
+            </section>
+
+            <section>
+                <h3>Мої роботи</h3>
+                <p>НЕМАЄ</p>
+            </section>
+
+            <section>
+                <h2>Лабораторні роботи</h2>
+                <nav>
+                    <a href="LR3/Vprava1.html" class="btn">Лаб_3_впр_1</a>
+                    <a href="LR3/Vprava2.html" class="btn1">Лаб_3_впр_2</a>
+                    <a href="LR3/Vprava3.html" class="btn2">Лаб_3_впр_3</a>
+                    <a href="LR3/Resume_Borbulevich.html" class="btn3">Практична_1</a>
+                </nav>
+            </section>
+        </main>
+        <footer class="right-side">
+            <p>© 2025 Богдан Борбулевич</p>
+        </footer>
+    </div>
+</body>
+</html>
