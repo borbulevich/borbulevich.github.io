@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Резюме - Богдан Борбулевич</title>
     <style>
         body {
             display: block;
@@ -141,73 +141,110 @@
         .btn2:hover {
             background-color: #17df14;
         }
+        .btn3 {
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn3:hover {
+            background-color: #baf90d;
+        }
     </style>
 </head>
 <body>
     <div class="page-container">
-        <div class="left-side">
-            <div class="avatar">
-                <img src="photo.jpg" alt="Моє фото" class="image">
-            </div><br>
-            <h2>Особисті дані</h2>
-            <hr>
-            <b>Ім'я</b>
-            <p>Богдан Борбулевич</p>
-            <b>Адреса</b>
-            <p>вул. Повстанців, буд. 45,<br>Івано-Франківськ</p>
-            <b>Номер телефону</b>
-            <p>+38 0682293321</p>
-            <b>Email</b>
-            <p>bohdan.borbulevych-pi2203@kep.nung.edu.ua
-            </p>
-            <b>Дата народження</b>
-            <p>08-03-2007</p>
-            <div class="divider"></div>
-            <b>Інтереси</b>
-            <p>Волейбол, програмування, теніс </p>
-            <div class="divider"></div>
-            <b>Мови</b>
-            <p>Українська, Англійська</p>
-        </div>
-        <div class="right-side">
+        <!-- Шапка сторінки -->
+        <header class="right-side">
             <h1>Богдан Борбулевич</h1>
+        </header>
+
+        <!-- Бічна панель з особистими даними -->
+        <aside class="left-side">
+            <figure class="avatar">
+                <img src="photo.jpg" alt="Фото Богдана Борбулевича" class="image">
+            </figure>
+            <section>
+                <h2>Особисті дані</h2>
+                <hr>
+                <p><b>Ім'я:</b> Богдан Борбулевич</p>
+                <p><b>Адреса:</b> вул. Повстанців, буд. 45, Івано-Франківськ</p>
+                <p><b>Номер телефону:</b> <a href="tel:+380682293321">+38 068 229 3321</a></p>
+                <p><b>Email:</b> <a href="mailto:bohdan.borbulevych-pi2203@kep.nung.edu.ua">bohdan.borbulevych-pi2203@kep.nung.edu.ua</a></p>
+                <p><b>Дата народження:</b> <time datetime="2007-03-08">08-03-2007</time></p>
+            </section>
+            <section>
+                <h2>Інтереси</h2>
+                <hr class="divider">
+                <p>Волейбол, програмування, теніс</p>
+            </section>
+            <section>
+                <h2>Мови</h2>
+                <hr class="divider">
+                <p>Українська, Англійська</p>
+            </section>
+        </aside>
+
+        <!-- Основний вміст -->
+        <main class="right-side">
             <section>
                 <h3>Досвід роботи</h3>
-                <ul>
-                    <li><b>Веб-розробник</b>, SoftServe, Київ (квіт 2026 – вер 2030)<br>Розробка програмного забезпечення; створення систем автоматичної перевірки програмного забезпечення.</li>
-                    <li><b>Лаборант кафедри робототехніки</b>, НУ "Львівська політехніка", Львів (вер 2022 – сер 2026)</li>
-                </ul>
+                <article>
+                    <p><b>Веб-розробник</b>, SoftServe, Київ</p>
+                    <p><time datetime="2026-04">квітень 2026</time> – <time datetime="2030-09">вересень 2030</time></p>
+                    <p>Розробка програмного забезпечення; створення систем автоматичної перевірки програмного забезпечення.</p>
+                </article>
+                <article>
+                    <p><b>Лаборант кафедри робототехніки</b>, НУ "Львівська політехніка", Львів</p>
+                    <p><time datetime="2022-09">вересень 2022</time> – <time datetime="2026-08">серпень 2026</time></p>
+                </article>
             </section>
+
             <section>
                 <h3>Освіта і кваліфікації</h3>
-                <ul>
-                    <li><b>Бакалавр</b>, ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ (вер 2022 – лип 2026)</li>
-                </ul>
+                <article>
+                    <p><b>Бакалавр</b>, ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ</p>
+                    <p><time datetime="2022-09">вересень 2022</time> – <time datetime="2026-07">липень 2026</time></p>
+                </article>
             </section>
+
             <section>
                 <h3>Курси</h3>
                 <ul>
-                    <li>Англійська для IT, Мовна школа Speak Up (2023 – 2025)</li>
-                    <li>Програмування на мові C++, Центр IT (2024 – 2024)</li>
+                    <li>Англійська для IT, Мовна школа Speak Up (<time datetime="2023">2023</time> – <time datetime="2025">2025</time>)</li>
+                    <li>Програмування на мові C++, Центр IT (<time datetime="2024">2024</time>)</li>
                 </ul>
             </section>
+
             <section>
                 <h3>Навички</h3>
                 <p>Python, C++, Java</p>
             </section>
+
             <section>
                 <h3>Мої роботи</h3>
-                <ul>
-                    <li>НЕМАЄ</li>
-                </ul>
+                <p>НЕМАЄ</p>
             </section>
+
             <section>
                 <h2>Лабораторні роботи</h2>
-                <a href="LR3/Vprava1.html" class="btn">Лаб_3_впр_1_</a> 
-                <a href="LR3/Vprava2.html" class="btn1">Лаб_3_впр_2_</a> 
-                <a href="LR3/Vprava3.html" class="btn2">Лаб_3_впр_3_</a>
+                <nav>
+                    <a href="LR3/Vprava1.html" class="btn">Лаб_3_впр_1</a>
+                    <a href="LR3/Vprava2.html" class="btn1">Лаб_3_впр_2</a>
+                    <a href="LR3/Vprava3.html" class="btn2">Лаб_3_впр_3</a>
+                    <a href="PROGRAM/Resume_Borbulevich.html" class="btn3">Практична_1</a>
+                </nav>
             </section>
-        </div>
+        </main>
+        <footer class="right-side">
+            <p>© 2025 Богдан Борбулевич</p>
+        </footer>
     </div>
 </body>
 </html>
