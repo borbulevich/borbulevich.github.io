@@ -1,0 +1,19 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.2;
+    margin: 20px;
+    background-color: #c2eafd; 
+    color: #595b5c;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 15px; 
+}
+
+p {
+    margin: 0 0 10px 0;
+}

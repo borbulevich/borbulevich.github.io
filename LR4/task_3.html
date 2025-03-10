@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3</title>
+    <style>
+        .container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+        h1 {
+            position: relative;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2em;
+            color: #050505;
+            display: inline-block; 
+            white-space: nowrap; 
+            margin: 0; 
+        }
+        h1::before,
+        h1::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            height: 5px; 
+            background-color: #000; 
+            width: 400px; 
+        }
+        h1::before {
+            left: -420px; 
+            transform: translateY(-50%); 
+        }
+        h1::after {
+            right: -420px; 
+            transform: translateY(-50%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TITLE</h1>
+    </div>
+</body>
+</html>
