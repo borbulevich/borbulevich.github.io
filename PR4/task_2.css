@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.method {
+    margin-bottom: 120px; 
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 80px;
+}
+
+.circle-border {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Жовте кільце */
+.circle-border::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    border: 30px solid #ffde00;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Синє кільце */
+.circle-border::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 160px;
+    height: 160px;
+    border: 30px solid #0057b7;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+/* Текст "UA" */
+.text {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, sans-serif;
+    position: absolute;
+}
+
+
+
+/* Спосіб 2: Використання box-shadow з псевдоелементами */
+.circle-shadow {
+    position: relative;
+    width: 100px; 
+    height: 100px;
+    background: white; 
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Жовте і синє кільця через box-shadow */
+.circle-shadow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 0 30px #ffde00, 
+        0 0 0 60px #0057b7; 
+    z-index: -1;
+}
+
+/* Текст "UA" через псевдоелемент :after */
+.circle-shadow:after {
+    content: "UA";
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    z-index: 1; 
+    font-family: Arial, sans-serif;
+    line-height: 1; 
+}

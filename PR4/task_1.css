@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.shape-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.shape {
+    flex: 0 0 calc(20% - 20px); 
+    text-align: center;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+
+.hexagon {
+    margin: 0 40px 20px; 
+}
+
+h2 {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Коло */
+#circle {
+    width: 100px;
+    height: 100px;
+    background: #7fee1d;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Квадрат */
+#square {
+    width: 100px;
+    height: 100px;
+    background: #f447ff;
+    margin: 0 auto;
+}
+
+/* Прямокутник */
+#rectangle {
+    width: 150px;
+    height: 80px;
+    background: #4da1f7;
+    margin: 0 auto;
+}
+
+/* Овал */
+#oval {
+    width: 150px;
+    height: 80px;
+    background: #f447ff;
+    border-radius: 75px / 40px;
+    margin: 0 auto;
+}
+
+/* Трикутник (спрямований вгору) */
+#triangle_up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ff9237;
+    margin: 0 auto;
+}
+
+/* Трикутник (спрямований вниз) */
+#triangle_down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #20a3bf;
+    margin: 0 auto;
+}
+
+/* Трикутник (спрямований вліво) */
+#triangle_left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #6bbb20;
+    border-bottom: 50px solid transparent;
+    margin: 0 auto;
+}
+
+/* Трикутник (спрямований вправо) */
+#triangle_right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #ff5a00;
+    border-bottom: 50px solid transparent;
+    margin: 0 auto;
+}
+
+/* Ромб */
+#diamond {
+    width: 80px;
+    height: 80px;
+    background: #1eff00;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    margin: 40px auto 10px;
+}
+
+/* Трапеція */
+#trapezium {
+    height: 0;
+    width: 100px;
+    border-bottom: 100px solid #ec3504;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin: 0 auto;
+}
+
+/* Паралелограм */
+#parallelogram {
+    width: 120px;
+    height: 80px;
+    background: #8734f7;
+    transform: skew(30deg);
+    margin: 0 auto;
+}
+
+/* Зірка (п'ятикутна зірка з променями) */
+#star {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #00b7eb;
+    clip-path: polygon(
+        50% 0%,   /* Вершина */
+        61% 35%,  /* Правий верхній промінь */
+        98% 35%,  /* Правий край */
+        68% 57%,  /* Правий нижній промінь */
+        79% 91%,  /* Правий нижній край */
+        50% 70%,  /* Нижня точка */
+        21% 91%,  /* Лівий нижній край */
+        32% 57%,  /* Лівий нижній промінь */
+        2% 35%,   /* Лівий край */
+        39% 35%   /* Лівий верхній промінь */
+    );
+    margin: 0 auto;
+}
+
+/* Зірка (6-ти кінцева) */
+#star_six_points {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #de34f7;
+    border-left: 50px solid transparent;
+    margin: 0 auto;
+}
+
+#star_six_points:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #de34f7;
+    border-left: 50px solid transparent;
+    top: 30px;
+    left: -50px;
+}
+
+/* П'ятикутник */
+#pentagon {
+    width: 80px;
+    height: 80px;
+    background: #277bab;
+    clip-path: polygon(
+        50% 0%,   /* Вершина */
+        100% 38%, /* Правий верхній кут */
+        82% 100%, /* Правий нижній кут */
+        18% 100%, /* Лівий нижній кут */
+        0% 38%    /* Лівий верхній кут */
+    );
+    margin: 0 auto;
+}
+
+#hexagon {
+    width: 100px;
+    height: 86px;
+    background: #fc5e5a;
+    clip-path: polygon(
+        25% 0%,   
+        75% 0%,   
+        100% 50%, 
+        75% 100%, 
+        25% 100%, 
+        0% 50%    
+    );
+    margin: 0 auto;
+}
+
+
+#octagon {
+    width: 100px;
+    height: 100px;
+    background: #ac60ec;
+    position: relative;
+    margin: 0 auto;
+}
+
+#octagon:before {
+    content: " ";
+    width: 42px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid #ac60ec;
+    border-left: 29px solid #f4f4f4;
+    border-right: 29px solid #f4f4f4;
+}
+
+#octagon:after {
+    content: " ";
+    width: 42px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid #ac60ec;
+    border-left: 29px solid #f4f4f4;
+    border-right: 29px solid #f4f4f4;
+}
+
+#heart {
+    position: relative;
+    margin: 0 auto;
+}
+
+#heart:before, #heart:after {
+    content: " ";
+    width: 70px;
+    height: 115px;
+    position: absolute;
+    background: red;
+    left: 70px;
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+
+#infinity {
+    width: 220px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#infinity:before, #infinity:after {
+    content: " ";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid #06c999;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+
+#comment_bubble {
+    width: 140px;
+    height: 100px;
+    background: #088cb7;
+    position: relative;
+    border-radius: 12px; 
+    margin: 0 auto;
+}
+
+#comment_bubble:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -26px; 
+    transform: translateY(-50%);
+    border-top: 13px solid transparent;
+    border-right: 26px solid #088cb7;
+    border-bottom: 13px solid transparent;
+}
+
+#pacman {
+    width: 0;
+    height: 0;
+    border: 70px solid #ffde00; 
+    border-right: 70px solid transparent; 
+    border-radius: 70px; 
+    margin: 0 auto;
+}
