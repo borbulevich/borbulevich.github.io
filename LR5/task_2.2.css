@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.table-container {
+    width: 550px; /* Виправлена ширина */
+    border: 1px solid #000; /* Додаємо рамку навколо "таблиці" */
+}
+
+.row {
+    overflow: hidden; /* Очищаємо float для кожного рядка */
+    display: flex;
+}
+
+/* Стилі для заголовка "STUDENTS MARK SHEET" */
+.row:first-child {
+    background-color: #12c712;
+    text-align: center;
+    font-weight: bold;
+}
+
+.row:first-child .cell {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+/* Стилі для заголовків стовпців */
+.row:nth-child(2) .cell {
+    background-color: #99cc99; /* Темно-зелений */
+    font-weight: normal; /* Прибираємо жирний шрифт */
+}
+
+/* Стилі для комірок */
+.cell {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+/* Вертикальне чергування фону для кожного стовпця */
+.row .cell:nth-child(1),  /* Name */
+.row .cell:nth-child(3),  /* Science */
+.row .cell:nth-child(5) { /* Physics */
+    background-color: #ccffcc; /* Світло-зелений */
+}
+
+.row .cell:nth-child(2),  /* Maths */
+.row .cell:nth-child(4),  /* English */
+.row .cell:nth-child(6) { /* General Knowledge */
+    background-color: #99cc99; /* Темно-зелений */
+}

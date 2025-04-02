@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Встановлюємо box-sizing для всіх елементів */
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    width: 960px; /* Фіксована ширина контейнера */
+    margin-top: 50px; /* Відступ зверху */
+    overflow: hidden; /* Для коректного очищення float */
+}
+
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both; /* Додаткове очищення float */
+}
+
+.header {
+    height: 200px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px; /* Відступ знизу */
+}
+
+.section {
+    float: left; /* Розташовуємо секції поруч */
+    width: 33.333333%; /* 33.33% від 960px ≈ 320px */
+    height: 200px;
+    background-color: #c0c0c0;
+    margin-bottom: 10px; /* Відступ знизу */
+    padding: 40px; /* Додаємо padding для тексту */
+}
+
+.section-1 {
+    background-color: #a0a0a0;
+}
+
+.section-2 {
+    background-color: #b0b0b0;
+}
+
+.section-3 {
+    background-color: #c0c0c0;
+}
+
+.footer {
+    clear: both; /* Очищаємо float */
+    height: 200px;
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Встановлюємо box-sizing для всіх елементів */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.pricing-card {
+    width: 300px; /* Фіксована ширина картки */
+    border-top: 4px solid #00cc00; /* Зелена верхня рамка */
+    border-bottom: 4px solid #00cc00; /* Зелена нижня рамка */
+    border-left: 3px solid #808080; /* Сіра ліва рамка */
+    border-right: 3px solid #808080; /* Сіра права рамка */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px; /* Внутрішній відступ */
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Відступ знизу */
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #00cc00; /* Зелений фон для ціни */
+    color: #fff; /* Білий текст */
+    padding: 15px 0; /* Вертикальний відступ */
+    margin-bottom: 20px; /* Відступ знизу */
+    margin-left: -20px; /* Негативний маржин, щоб розтягнути фон на всю ширину */
+    margin-right: -20px; /* Негативний маржин, щоб розтягнути фон на всю ширину */
+}
+
+.options {
+    list-style: none; /* Прибираємо маркери списку */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+.options li {
+    padding: 10px 0; /* Вертикальний відступ для кожного пункту */
+}
+
+.options li:nth-child(2),
+.options li:nth-child(4),
+.options li:nth-child(6) {
+    background-color: #f0f0f0; /* Світло-сірий фон для 2-ї, 4-ї, 6-ї опцій */
+    margin-left: -20px; /* Негативний маржин, щоб розтягнути фон на всю ширину */
+    margin-right: -20px; /* Негативний маржин, щоб розтягнути фон на всю ширину */
+}
+
+.options li:last-child {
+    border-bottom: none; /* Прибираємо межу для останнього пункту */
+}
+
+.purchase-btn {
+    background-color: transparent;
+    border: 2px solid #00cc00; /* Зелена рамка кнопки */
+    color: #00cc00; /* Зелений текст */
+    padding: 10px 20px; /* Внутрішній відступ */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; /* Закруглені кути кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід для ефекту наведення */
+}
+
+.purchase-btn:hover {
+    background-color: #00cc00; /* Зелений фон при наведенні */
+    color: #fff; /* Білий текст при наведенні */
+}

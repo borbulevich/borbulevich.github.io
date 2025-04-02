@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.mark-sheet {
+    border-collapse: collapse; /* Об'єднуємо рамки клітинок */
+    width: 550px; /* Виправлена ширина таблиці */
+}
+
+.mark-sheet th,
+.mark-sheet td {
+    border: 1px solid #000; /* Чорна рамка для всіх клітинок */
+    padding: 5px;
+    text-align: left; /* Вирівнювання по лівому краю */
+}
+
+/* Стилі для заголовка "STUDENTS MARK SHEET" */
+.mark-sheet th[colspan="6"] {
+    background-color: #19d219;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стилі для заголовків стовпців */
+.mark-sheet th:not([colspan]) {
+    background-color: #99cc99; /* Темно-зелений фон */
+    font-weight: normal; /* Прибираємо жирний шрифт */
+}
+
+/* Вертикальне чергування фону */
+.mark-sheet th:nth-child(odd),
+.mark-sheet td:nth-child(odd) {
+    background-color: #ccffcc; /* Світло-зелений фон */
+}
+
+.mark-sheet th:nth-child(even),
+.mark-sheet td:nth-child(even) {
+    background-color: #99cc99; /* Темно-зелений фон */
+}
