@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    color: #1e90ff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.logo1 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0 20px 13px;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #888;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.jumbotron {
+    background-image: url('jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    width: 200px;
+    text-align: center;
+}
+
+.service-card i {
+    font-size: 2.5em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.blog {
+    padding: 50px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.blog-post {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.blog-post img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-post .date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.blog-post h3 {
+    font-size: 1.2em;
+}
+
+.blog-post p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #465057;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.6em;
+    color: #ffffff;
+}
